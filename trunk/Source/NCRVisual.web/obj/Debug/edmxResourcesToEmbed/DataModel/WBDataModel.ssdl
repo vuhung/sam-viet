@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="WBModelStoreContainer">
+    <EntitySet Name="ref_country_indicator" EntityType="WBModel.Store.ref_country_indicator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ref_project_millenium" EntityType="WBModel.Store.ref_project_millenium" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ref_tab_indicator" EntityType="WBModel.Store.ref_tab_indicator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ref_user_country" EntityType="WBModel.Store.ref_user_country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ref_user_indicator" EntityType="WBModel.Store.ref_user_indicator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ref_user_indicator_graph" EntityType="WBModel.Store.ref_user_indicator_graph" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ref_user_tab" EntityType="WBModel.Store.ref_user_tab" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_comments" EntityType="WBModel.Store.tbl_comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_countries" EntityType="WBModel.Store.tbl_countries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_graphs" EntityType="WBModel.Store.tbl_graphs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_income_levels" EntityType="WBModel.Store.tbl_income_levels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_indicators" EntityType="WBModel.Store.tbl_indicators" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_lending_types" EntityType="WBModel.Store.tbl_lending_types" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_millenium" EntityType="WBModel.Store.tbl_millenium" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_projects" EntityType="WBModel.Store.tbl_projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_regions" EntityType="WBModel.Store.tbl_regions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_tabs" EntityType="WBModel.Store.tbl_tabs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_trades" EntityType="WBModel.Store.tbl_trades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_users" EntityType="WBModel.Store.tbl_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TM_WORLD_BORDERS_SIMPL-0_2" EntityType="WBModel.Store.TM_WORLD_BORDERS_SIMPL-0_2" store:Type="Tables" Schema="dbo" Table="TM_WORLD_BORDERS_SIMPL-0.2" />
+    <EntitySet Name="View_CountryBorder" EntityType="WBModel.Store.View_CountryBorder" store:Type="Views" store:Schema="dbo" store:Name="View_CountryBorder">
+      <DefiningQuery>SELECT 
+      [View_CountryBorder].[ID] AS [ID], 
+      [View_CountryBorder].[FIPS] AS [FIPS], 
+      [View_CountryBorder].[ISO2] AS [ISO2], 
+      [View_CountryBorder].[ISO3] AS [ISO3], 
+      [View_CountryBorder].[UN] AS [UN], 
+      [View_CountryBorder].[NAME] AS [NAME], 
+      [View_CountryBorder].[AREA] AS [AREA], 
+      [View_CountryBorder].[POP2005] AS [POP2005], 
+      [View_CountryBorder].[REGION] AS [REGION], 
+      [View_CountryBorder].[SUBREGION] AS [SUBREGION], 
+      [View_CountryBorder].[LON] AS [LON], 
+      [View_CountryBorder].[LAT] AS [LAT], 
+      [View_CountryBorder].[geom] AS [geom]
+      FROM [dbo].[View_CountryBorder] AS [View_CountryBorder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_CountryIndicator" EntityType="WBModel.Store.View_CountryIndicator" store:Type="Views" store:Schema="dbo" store:Name="View_CountryIndicator">
+      <DefiningQuery>SELECT 
+      [View_CountryIndicator].[country_id_pk] AS [country_id_pk], 
+      [View_CountryIndicator].[country_iso_code] AS [country_iso_code], 
+      [View_CountryIndicator].[country_name] AS [country_name], 
+      [View_CountryIndicator].[indicator_code] AS [indicator_code], 
+      [View_CountryIndicator].[indicator_name] AS [indicator_name], 
+      [View_CountryIndicator].[indicator_description] AS [indicator_description], 
+      [View_CountryIndicator].[indicator_unit] AS [indicator_unit], 
+      [View_CountryIndicator].[country_indicator_value] AS [country_indicator_value], 
+      [View_CountryIndicator].[country_indicator_year] AS [country_indicator_year]
+      FROM [dbo].[View_CountryIndicator] AS [View_CountryIndicator]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_CountryIndicatorTab" EntityType="WBModel.Store.View_CountryIndicatorTab" store:Type="Views" store:Schema="dbo" store:Name="View_CountryIndicatorTab">
+      <DefiningQuery>SELECT 
+      [View_CountryIndicatorTab].[country_id_pk] AS [country_id_pk], 
+      [View_CountryIndicatorTab].[country_iso_code] AS [country_iso_code], 
+      [View_CountryIndicatorTab].[country_name] AS [country_name], 
+      [View_CountryIndicatorTab].[indicator_code] AS [indicator_code], 
+      [View_CountryIndicatorTab].[indicator_name] AS [indicator_name], 
+      [View_CountryIndicatorTab].[indicator_description] AS [indicator_description], 
+      [View_CountryIndicatorTab].[indicator_unit] AS [indicator_unit], 
+      [View_CountryIndicatorTab].[country_indicator_value] AS [country_indicator_value], 
+      [View_CountryIndicatorTab].[country_indicator_year] AS [country_indicator_year], 
+      [View_CountryIndicatorTab].[tab_id_pk] AS [tab_id_pk], 
+      [View_CountryIndicatorTab].[tab_name] AS [tab_name]
+      FROM [dbo].[View_CountryIndicatorTab] AS [View_CountryIndicatorTab]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_GeneralCountry" EntityType="WBModel.Store.View_GeneralCountry" store:Type="Views" store:Schema="dbo" store:Name="View_GeneralCountry">
+      <DefiningQuery>SELECT 
+      [View_GeneralCountry].[country_id_pk] AS [country_id_pk], 
+      [View_GeneralCountry].[country_name] AS [country_name], 
+      [View_GeneralCountry].[region_name] AS [region_name], 
+      [View_GeneralCountry].[lending_type_name] AS [lending_type_name], 
+      [View_GeneralCountry].[income_level_name] AS [income_level_name]
+      FROM [dbo].[View_GeneralCountry] AS [View_GeneralCountry]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_TabIndicator" EntityType="WBModel.Store.View_TabIndicator" store:Type="Views" store:Schema="dbo" store:Name="View_TabIndicator">
+      <DefiningQuery>SELECT 
+      [View_TabIndicator].[tab_id_pk] AS [tab_id_pk], 
+      [View_TabIndicator].[tab_name] AS [tab_name], 
+      [View_TabIndicator].[indicator_id_pk] AS [indicator_id_pk], 
+      [View_TabIndicator].[indicator_code] AS [indicator_code], 
+      [View_TabIndicator].[indicator_description] AS [indicator_description], 
+      [View_TabIndicator].[indicator_name] AS [indicator_name], 
+      [View_TabIndicator].[indicator_unit] AS [indicator_unit]
+      FROM [dbo].[View_TabIndicator] AS [View_TabIndicator]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_User_Country" EntityType="WBModel.Store.View_User_Country" store:Type="Views" store:Schema="dbo" store:Name="View_User_Country">
+      <DefiningQuery>SELECT 
+      [View_User_Country].[user_id_pk] AS [user_id_pk], 
+      [View_User_Country].[user_name] AS [user_name], 
+      [View_User_Country].[country_id_pk] AS [country_id_pk], 
+      [View_User_Country].[country_iso_code] AS [country_iso_code], 
+      [View_User_Country].[country_name] AS [country_name]
+      FROM [dbo].[View_User_Country] AS [View_User_Country]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="ref_country_indicator">
+    <Key>
+      <PropertyRef Name="country_indicator_id_pk" />
+    </Key>
+    <Property Name="country_indicator_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="country_indicator_year" Type="int" />
+    <Property Name="country_id" Type="int" />
+    <Property Name="indicator_id" Type="int" />
+    <Property Name="country_indicator_value" Type="real" />
+  </EntityType>
+  <EntityType Name="ref_project_millenium">
+    <Key>
+      <PropertyRef Name="ref_project_millenium_id_pk" />
+    </Key>
+    <Property Name="ref_project_millenium_id_pk" Type="int" Nullable="false" />
+    <Property Name="project_id" Type="int" />
+    <Property Name="millenium_id" Type="int" />
+  </EntityType>
+  <EntityType Name="ref_tab_indicator">
+    <Key>
+      <PropertyRef Name="tab_indicator_id_pk" />
+    </Key>
+    <Property Name="tab_indicator_id_pk" Type="int" Nullable="false" />
+    <Property Name="tab_id" Type="int" />
+    <Property Name="indicator_id" Type="int" />
+  </EntityType>
+  <EntityType Name="ref_user_country">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="country_id" />
+    </Key>
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="country_id" Type="int" Nullable="false" />
+    <Property Name="lat" Type="numeric" Scale="5" />
+    <Property Name="long" Type="numeric" Scale="5" />
+  </EntityType>
+  <EntityType Name="ref_user_indicator">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="indicator_id" />
+    </Key>
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="indicator_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ref_user_indicator_graph">
+    <Key>
+      <PropertyRef Name="graph_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="indicator_id" />
+    </Key>
+    <Property Name="graph_id" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="indicator_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ref_user_tab">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="tab_id" />
+    </Key>
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="tab_id" Type="int" Nullable="false" />
+    <Property Name="feed_link" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbl_comments">
+    <Key>
+      <PropertyRef Name="comment_id_pk" />
+    </Key>
+    <Property Name="comment_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="comment_content" Type="text" />
+    <Property Name="user_name" Type="varchar" MaxLength="50" />
+    <Property Name="project_id" Type="int" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="comment_type" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbl_countries">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="int" Nullable="false" />
+    <Property Name="country_iso_code" Type="varchar" MaxLength="10" />
+    <Property Name="country_name" Type="varchar" MaxLength="255" />
+    <Property Name="region_id" Type="varchar" MaxLength="10" />
+    <Property Name="income_level_id" Type="varchar" MaxLength="10" />
+    <Property Name="lending_type_id" Type="varchar" MaxLength="10" />
+    <Property Name="country_longitude" Type="numeric" Scale="5" />
+    <Property Name="country_latitude" Type="numeric" Scale="5" />
+    <Property Name="is_region" Type="bit" />
+    <Property Name="country_code" Type="int" />
+    <Property Name="has_flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_graphs">
+    <Key>
+      <PropertyRef Name="graph_id_pk" />
+    </Key>
+    <Property Name="graph_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="country_list" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="indicator_list" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="graph_name" Type="varchar" MaxLength="255" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="project_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_income_levels">
+    <Key>
+      <PropertyRef Name="income_level_id_pk" />
+    </Key>
+    <Property Name="income_level_id_pk" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="income_level_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_indicators">
+    <Key>
+      <PropertyRef Name="indicator_id_pk" />
+    </Key>
+    <Property Name="indicator_id_pk" Type="int" Nullable="false" />
+    <Property Name="indicator_code" Type="varchar" MaxLength="50" />
+    <Property Name="indicator_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_description" Type="text" />
+    <Property Name="indicator_unit" Type="varchar" MaxLength="255" />
+    <Property Name="is_yearly" Type="bit" />
+    <Property Name="last_update" Type="int" />
+    <Property Name="is_gotten" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_lending_types">
+    <Key>
+      <PropertyRef Name="lending_type_id_pk" />
+    </Key>
+    <Property Name="lending_type_id_pk" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="lending_type_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_millenium">
+    <Key>
+      <PropertyRef Name="millenium_id_pk" />
+    </Key>
+    <Property Name="millenium_id_pk" Type="int" Nullable="false" />
+    <Property Name="millenium_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_projects">
+    <Key>
+      <PropertyRef Name="project_id_pk" />
+    </Key>
+    <Property Name="project_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="country_id" Type="int" />
+    <Property Name="project_link" Type="varchar" MaxLength="255" />
+    <Property Name="project_approval_date" Type="varchar" MaxLength="50" />
+    <Property Name="project_close_date" Type="varchar" MaxLength="50" />
+    <Property Name="project_status" Type="nvarchar" MaxLength="50" />
+    <Property Name="project_cost" Type="varchar" MaxLength="50" />
+    <Property Name="project_region" Type="varchar" MaxLength="255" />
+    <Property Name="project_major_sector" Type="ntext" />
+    <Property Name="project_themes" Type="ntext" />
+    <Property Name="project_borrower" Type="varchar" MaxLength="255" />
+    <Property Name="project_implement_agency" Type="varchar" MaxLength="255" />
+    <Property Name="project_wb_id" Type="varchar" MaxLength="50" />
+    <Property Name="project_name" Type="varchar" MaxLength="255" />
+    <Property Name="project_outcome" Type="ntext" />
+    <Property Name="coordinate" Type="varchar" MaxLength="255" />
+    <Property Name="related_text" Type="text" />
+    <Property Name="related_image" Type="text" />
+    <Property Name="related_video" Type="text" />
+    <Property Name="related_file" Type="text" />
+  </EntityType>
+  <EntityType Name="tbl_regions">
+    <Key>
+      <PropertyRef Name="region_id_pk" />
+    </Key>
+    <Property Name="region_id_pk" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="region_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_tabs">
+    <Key>
+      <PropertyRef Name="tab_id_pk" />
+    </Key>
+    <Property Name="tab_id_pk" Type="int" Nullable="false" />
+    <Property Name="tab_name" Type="varchar" MaxLength="255" />
+    <Property Name="tab_feed_link" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_trades">
+    <Key>
+      <PropertyRef Name="trade_id_pk" />
+    </Key>
+    <Property Name="trade_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="country_from_id" Type="int" />
+    <Property Name="country_to_id" Type="int" />
+    <Property Name="import_value" Type="decimal" Scale="5" />
+    <Property Name="export_value" Type="decimal" Scale="5" />
+    <Property Name="trade_year" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_users">
+    <Key>
+      <PropertyRef Name="user_id_pk" />
+    </Key>
+    <Property Name="user_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_name" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="255" />
+    <Property Name="msn_id" Type="varchar" MaxLength="255" />
+    <Property Name="facebook_id" Type="varchar" MaxLength="255" />
+    <Property Name="twitter_id" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6005: The data type 'geometry' is not supported; the column 'geom' in table 'WB.dbo.TM_WORLD_BORDERS_SIMPL-0.2' was excluded.
+      -->
+  <EntityType Name="TM_WORLD_BORDERS_SIMPL-0_2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FIPS" Type="nvarchar" MaxLength="255" />
+    <Property Name="ISO2" Type="nvarchar" MaxLength="255" />
+    <Property Name="ISO3" Type="nvarchar" MaxLength="255" />
+    <Property Name="UN" Type="int" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="bigint" />
+    <Property Name="POP2005" Type="bigint" />
+    <Property Name="REGION" Type="int" />
+    <Property Name="SUBREGION" Type="int" />
+    <Property Name="LON" Type="float" />
+    <Property Name="LAT" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WB.dbo.View_CountryBorder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_CountryBorder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FIPS" Type="nvarchar" MaxLength="255" />
+    <Property Name="ISO2" Type="nvarchar" MaxLength="255" />
+    <Property Name="ISO3" Type="nvarchar" MaxLength="255" />
+    <Property Name="UN" Type="int" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="bigint" />
+    <Property Name="POP2005" Type="bigint" />
+    <Property Name="REGION" Type="int" />
+    <Property Name="SUBREGION" Type="int" />
+    <Property Name="LON" Type="float" />
+    <Property Name="LAT" Type="float" />
+    <Property Name="geom" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WB.dbo.View_CountryIndicator' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_CountryIndicator">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="int" Nullable="false" />
+    <Property Name="country_iso_code" Type="varchar" MaxLength="10" />
+    <Property Name="country_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_code" Type="varchar" MaxLength="50" />
+    <Property Name="indicator_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_description" Type="text" />
+    <Property Name="indicator_unit" Type="varchar" MaxLength="255" />
+    <Property Name="country_indicator_value" Type="numeric" Scale="5" />
+    <Property Name="country_indicator_year" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WB.dbo.View_CountryIndicatorTab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_CountryIndicatorTab">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+      <PropertyRef Name="tab_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="int" Nullable="false" />
+    <Property Name="country_iso_code" Type="varchar" MaxLength="10" />
+    <Property Name="country_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_code" Type="varchar" MaxLength="50" />
+    <Property Name="indicator_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_description" Type="text" />
+    <Property Name="indicator_unit" Type="varchar" MaxLength="255" />
+    <Property Name="country_indicator_value" Type="numeric" Scale="5" />
+    <Property Name="country_indicator_year" Type="int" />
+    <Property Name="tab_id_pk" Type="int" Nullable="false" />
+    <Property Name="tab_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WB.dbo.View_GeneralCountry' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_GeneralCountry">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="int" Nullable="false" />
+    <Property Name="country_name" Type="varchar" MaxLength="255" />
+    <Property Name="region_name" Type="varchar" MaxLength="255" />
+    <Property Name="lending_type_name" Type="varchar" MaxLength="255" />
+    <Property Name="income_level_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WB.dbo.View_TabIndicator' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_TabIndicator">
+    <Key>
+      <PropertyRef Name="tab_id_pk" />
+      <PropertyRef Name="indicator_id_pk" />
+    </Key>
+    <Property Name="tab_id_pk" Type="int" Nullable="false" />
+    <Property Name="tab_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_id_pk" Type="int" Nullable="false" />
+    <Property Name="indicator_code" Type="varchar" MaxLength="50" />
+    <Property Name="indicator_description" Type="text" />
+    <Property Name="indicator_name" Type="varchar" MaxLength="255" />
+    <Property Name="indicator_unit" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WB.dbo.View_User_Country' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_User_Country">
+    <Key>
+      <PropertyRef Name="user_id_pk" />
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="user_id_pk" Type="int" Nullable="false" />
+    <Property Name="user_name" Type="varchar" MaxLength="50" />
+    <Property Name="country_id_pk" Type="int" Nullable="false" />
+    <Property Name="country_iso_code" Type="varchar" MaxLength="10" />
+    <Property Name="country_name" Type="varchar" MaxLength="255" />
+  </EntityType>
+</Schema>
