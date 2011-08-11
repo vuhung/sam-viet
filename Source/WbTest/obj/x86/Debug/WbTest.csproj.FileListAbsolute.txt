@@ -1,0 +1,6 @@
+D:\Working\WordBank\Source\WbTest\bin\Debug\WbTest.exe
+D:\Working\WordBank\Source\WbTest\bin\Debug\WbTest.pdb
+D:\Working\WordBank\Source\WbTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Working\WordBank\Source\WbTest\obj\x86\Debug\WbTest.exe
+D:\Working\WordBank\Source\WbTest\obj\x86\Debug\WbTest.pdb
+D:\Working\WordBank\Source\WbTest\obj\x86\Debug\WbTest.csproj.ResolveComReference.cache

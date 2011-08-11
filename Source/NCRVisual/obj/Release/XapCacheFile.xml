@@ -1,0 +1,6 @@
+﻿<xapCache source="D:\Working\WordBank\Source\NCRVisual\Bin\Release\NCRVisual.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="20/01/2011 1:15:46 CH">
+  <file source="D:\Working\WordBank\Source\NCRVisual\obj\Release\NCRVisual.dll" archivePath="NCRVisual.dll" lastWriteTime="20/01/2011 1:15:45 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="D:\Working\WordBank\Source\NCRVisual\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="20/01/2011 1:15:46 CH" />
+</xapCache>

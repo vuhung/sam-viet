@@ -1,0 +1,38 @@
+﻿<xapCache source="D:\Working\WordBank\Source\WorldMap\Bin\Debug\WorldMap.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12/08/2011 3:19:32 SA">
+  <file source="D:\Working\WordBank\Source\WorldMap\obj\Debug\WorldMap.dll" archivePath="WorldMap.dll" lastWriteTime="12/08/2011 3:19:29 SA" />
+  <file source="D:\Working\WordBank\Libs\Bing Maps Multi Shape\BingMapsSL.MultiShape.dll" archivePath="BingMapsSL.MultiShape.dll" lastWriteTime="16/02/2011 2:39:52 CH" />
+  <file source="D:\Working\WordBank\Libs\libs\Divelements.SilverlightTools.dll" archivePath="Divelements.SilverlightTools.dll" lastWriteTime="06/04/2010 3:09:04 CH" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ImageTools.dll" archivePath="ImageTools.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ImageTools.IO.Bmp.dll" archivePath="ImageTools.IO.Bmp.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ImageTools.IO.Gif.dll" archivePath="ImageTools.IO.Gif.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ImageTools.IO.Jpeg.dll" archivePath="ImageTools.IO.Jpeg.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ImageTools.IO.Png.dll" archivePath="ImageTools.IO.Png.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ImageTools.Utils.dll" archivePath="ImageTools.Utils.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\Microsoft.Expression.Drawing.dll" archivePath="Microsoft.Expression.Drawing.dll" lastWriteTime="25/05/2010 5:59:20 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\Microsoft.Expression.Effects.dll" archivePath="Microsoft.Expression.Effects.dll" lastWriteTime="25/05/2010 5:59:20 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="25/05/2010 5:59:20 CH" />
+  <file source="D:\Working\WordBank\Source\WorldMap\Bin\Debug\Microsoft.Maps.MapControl.Common.dll" archivePath="Microsoft.Maps.MapControl.Common.dll" lastWriteTime="11/05/2010 5:12:30 CH" />
+  <file source="D:\Working\WordBank\Source\WorldMap\Bin\Debug\Microsoft.Maps.MapControl.dll" archivePath="Microsoft.Maps.MapControl.dll" lastWriteTime="11/05/2010 5:12:30 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="06/05/2010 2:24:00 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="06/05/2010 2:23:58 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.Syndication.dll" archivePath="System.ServiceModel.Syndication.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.Web.Extensions.dll" archivePath="System.ServiceModel.Web.Extensions.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Toolkit\Apr10\Bin\System.Windows.Controls.DataVisualization.Toolkit.dll" archivePath="System.Windows.Controls.DataVisualization.Toolkit.dll" lastWriteTime="13/04/2010 8:14:58 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Toolkit\Apr10\Bin\System.Windows.Controls.Layout.Toolkit.dll" archivePath="System.Windows.Controls.Layout.Toolkit.dll" lastWriteTime="13/04/2010 8:14:58 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Toolkit\Apr10\Bin\System.Windows.Controls.Toolkit.dll" archivePath="System.Windows.Controls.Toolkit.dll" lastWriteTime="13/04/2010 8:15:14 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="25/05/2010 5:59:20 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Debug\WorldbankDataGraphs.dll" archivePath="WorldbankDataGraphs.dll" lastWriteTime="12/08/2011 3:19:16 SA" />
+  <file source="D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Debug\SLVisifire.Charts.dll" archivePath="SLVisifire.Charts.dll" lastWriteTime="06/11/2010 11:43:24 SA" />
+  <file source="D:\Working\WordBank\Libs\ImageTools\ICSharpCode.SharpZLib.Silverlight.dll" archivePath="ICSharpCode.SharpZLib.Silverlight.dll" lastWriteTime="08/04/2011 4:32:24 CH" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="01/04/2010 12:46:10 SA" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Toolkit\Apr10\Bin\System.Windows.Controls.Toolkit.Internals.dll" archivePath="System.Windows.Controls.Toolkit.Internals.dll" lastWriteTime="13/04/2010 7:59:48 CH" />
+  <file source="D:\Working\WordBank\Source\WorldMap\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="14/04/2011 1:56:40 SA" />
+  <file source="D:\Working\WordBank\Source\WorldMap\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="14/04/2011 1:56:40 SA" />
+  <file source="D:\Working\WordBank\Source\WorldMap\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="14/04/2011 1:41:04 SA" />
+</xapCache>

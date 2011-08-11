@@ -1,0 +1,14 @@
+D:\Working\WordBank\Source\NCRVisual.web\bin\NCRVisual.web.dll
+D:\Working\WordBank\Source\NCRVisual.web\bin\NCRVisual.web.pdb
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ComponentModel.DataAnnotations.dll
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.Hosting.dll
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.Server.dll
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.EntityFramework.xml
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.Hosting.xml
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.Hosting.OData.xml
+D:\Working\WordBank\Source\NCRVisual.web\bin\System.ServiceModel.DomainServices.Server.xml
+D:\Working\WordBank\Source\NCRVisual.web\obj\Release\ResolveAssemblyReference.cache
+D:\Working\WordBank\Source\NCRVisual.web\obj\Release\NCRVisual.web.dll
+D:\Working\WordBank\Source\NCRVisual.web\obj\Release\NCRVisual.web.pdb

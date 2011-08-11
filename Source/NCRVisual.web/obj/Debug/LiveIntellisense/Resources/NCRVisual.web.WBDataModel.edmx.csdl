@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ref_country_indicator" EntityType="WBModel.ref_country_indicator" />
+    <EntitySet Name="ref_project_millenium" EntityType="WBModel.ref_project_millenium" />
+    <EntitySet Name="ref_tab_indicator" EntityType="WBModel.ref_tab_indicator" />
+    <EntitySet Name="ref_user_country" EntityType="WBModel.ref_user_country" />
+    <EntitySet Name="ref_user_indicator" EntityType="WBModel.ref_user_indicator" />
+    <EntitySet Name="ref_user_tab" EntityType="WBModel.ref_user_tab" />
+    <EntitySet Name="tbl_countries" EntityType="WBModel.tbl_countries" />
+    <EntitySet Name="tbl_income_levels" EntityType="WBModel.tbl_income_levels" />
+    <EntitySet Name="tbl_indicators" EntityType="WBModel.tbl_indicators" />
+    <EntitySet Name="tbl_lending_types" EntityType="WBModel.tbl_lending_types" />
+    <EntitySet Name="tbl_millenium" EntityType="WBModel.tbl_millenium" />
+    <EntitySet Name="tbl_projects" EntityType="WBModel.tbl_projects" />
+    <EntitySet Name="tbl_regions" EntityType="WBModel.tbl_regions" />
+    <EntitySet Name="tbl_tabs" EntityType="WBModel.tbl_tabs" />
+    <EntitySet Name="tbl_trades" EntityType="WBModel.tbl_trades" />
+    <EntitySet Name="tbl_users" EntityType="WBModel.tbl_users" />
+    <EntitySet Name="TM_WORLD_BORDERS_SIMPL_0_2" EntityType="WBModel.TM_WORLD_BORDERS_SIMPL_0_2" />
+    <EntitySet Name="View_CountryBorder" EntityType="WBModel.View_CountryBorder" />
+    <EntitySet Name="View_CountryIndicator" EntityType="WBModel.View_CountryIndicator" />
+    <EntitySet Name="View_CountryIndicatorTab" EntityType="WBModel.View_CountryIndicatorTab" />
+    <EntitySet Name="View_GeneralCountry" EntityType="WBModel.View_GeneralCountry" />
+    <EntitySet Name="View_TabIndicator" EntityType="WBModel.View_TabIndicator" />
+    <EntitySet Name="View_User_Country" EntityType="WBModel.View_User_Country" />
+    <EntitySet Name="ref_user_indicator_graph" EntityType="WBModel.ref_user_indicator_graph" />
+    <EntitySet Name="tbl_comments" EntityType="WBModel.tbl_comments" />
+    <EntitySet Name="tbl_graphs" EntityType="WBModel.tbl_graphs" />
+  </EntityContainer>
+  <EntityType Name="ref_country_indicator">
+    <Key>
+      <PropertyRef Name="country_indicator_id_pk" />
+    </Key>
+    <Property Name="country_indicator_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country_indicator_year" Type="Int32" />
+    <Property Name="country_id" Type="Int32" />
+    <Property Name="indicator_id" Type="Int32" />
+    <Property Name="country_indicator_value" Type="Single" />
+  </EntityType>
+  <EntityType Name="ref_project_millenium">
+    <Key>
+      <PropertyRef Name="ref_project_millenium_id_pk" />
+    </Key>
+    <Property Name="ref_project_millenium_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="project_id" Type="Int32" />
+    <Property Name="millenium_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ref_tab_indicator">
+    <Key>
+      <PropertyRef Name="tab_indicator_id_pk" />
+    </Key>
+    <Property Name="tab_indicator_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="tab_id" Type="Int32" />
+    <Property Name="indicator_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ref_user_country">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="country_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="country_id" Type="Int32" Nullable="false" />
+    <Property Name="lat" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="long" Type="Decimal" Precision="18" Scale="5" />
+  </EntityType>
+  <EntityType Name="ref_user_indicator">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="indicator_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="indicator_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ref_user_tab">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="tab_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="tab_id" Type="Int32" Nullable="false" />
+    <Property Name="feed_link" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="tbl_countries">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="country_iso_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="country_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="region_id" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="income_level_id" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="lending_type_id" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="country_longitude" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="country_latitude" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="is_region" Type="Boolean" />
+    <Property Name="country_code" Type="Int32" />
+    <Property Name="has_flag" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_income_levels">
+    <Key>
+      <PropertyRef Name="income_level_id_pk" />
+    </Key>
+    <Property Name="income_level_id_pk" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="income_level_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_indicators">
+    <Key>
+      <PropertyRef Name="indicator_id_pk" />
+    </Key>
+    <Property Name="indicator_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="indicator_code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_unit" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="is_yearly" Type="Boolean" />
+    <Property Name="last_update" Type="Int32" />
+    <Property Name="is_gotten" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_lending_types">
+    <Key>
+      <PropertyRef Name="lending_type_id_pk" />
+    </Key>
+    <Property Name="lending_type_id_pk" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="lending_type_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_millenium">
+    <Key>
+      <PropertyRef Name="millenium_id_pk" />
+    </Key>
+    <Property Name="millenium_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="millenium_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_projects">
+    <Key>
+      <PropertyRef Name="project_id_pk" />
+    </Key>
+    <Property Name="project_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country_id" Type="Int32" />
+    <Property Name="project_link" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="project_approval_date" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="project_close_date" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="project_status" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="project_cost" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="project_region" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="project_major_sector" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="project_themes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="project_borrower" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="project_implement_agency" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="project_wb_id" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="project_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="project_outcome" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="coordinate" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="related_text" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="related_image" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="related_video" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="related_file" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_regions">
+    <Key>
+      <PropertyRef Name="region_id_pk" />
+    </Key>
+    <Property Name="region_id_pk" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="region_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_tabs">
+    <Key>
+      <PropertyRef Name="tab_id_pk" />
+    </Key>
+    <Property Name="tab_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="tab_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="tab_feed_link" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_trades">
+    <Key>
+      <PropertyRef Name="trade_id_pk" />
+    </Key>
+    <Property Name="trade_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country_from_id" Type="Int32" />
+    <Property Name="country_to_id" Type="Int32" />
+    <Property Name="import_value" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="export_value" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="trade_year" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_users">
+    <Key>
+      <PropertyRef Name="user_id_pk" />
+    </Key>
+    <Property Name="user_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="msn_id" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="facebook_id" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="twitter_id" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TM_WORLD_BORDERS_SIMPL_0_2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIPS" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ISO2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ISO3" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="UN" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="AREA" Type="Int64" />
+    <Property Name="POP2005" Type="Int64" />
+    <Property Name="REGION" Type="Int32" />
+    <Property Name="SUBREGION" Type="Int32" />
+    <Property Name="LON" Type="Double" />
+    <Property Name="LAT" Type="Double" />
+  </EntityType>
+  <EntityType Name="View_CountryBorder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIPS" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ISO2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ISO3" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="UN" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="AREA" Type="Int64" />
+    <Property Name="POP2005" Type="Int64" />
+    <Property Name="REGION" Type="Int32" />
+    <Property Name="SUBREGION" Type="Int32" />
+    <Property Name="LON" Type="Double" />
+    <Property Name="LAT" Type="Double" />
+    <Property Name="geom" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="View_CountryIndicator">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="country_iso_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="country_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_unit" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="country_indicator_value" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="country_indicator_year" Type="Int32" />
+  </EntityType>
+  <EntityType Name="View_CountryIndicatorTab">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+      <PropertyRef Name="tab_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="country_iso_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="country_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_unit" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="country_indicator_value" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="country_indicator_year" Type="Int32" />
+    <Property Name="tab_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="tab_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="View_GeneralCountry">
+    <Key>
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="country_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="country_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="region_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="lending_type_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="income_level_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="View_TabIndicator">
+    <Key>
+      <PropertyRef Name="tab_id_pk" />
+      <PropertyRef Name="indicator_id_pk" />
+    </Key>
+    <Property Name="tab_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="tab_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="indicator_code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="indicator_unit" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="View_User_Country">
+    <Key>
+      <PropertyRef Name="user_id_pk" />
+      <PropertyRef Name="country_id_pk" />
+    </Key>
+    <Property Name="user_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="country_id_pk" Type="Int32" Nullable="false" />
+    <Property Name="country_iso_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="country_name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ref_user_indicator_graph">
+    <Key>
+      <PropertyRef Name="graph_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="indicator_id" />
+    </Key>
+    <Property Type="String" Name="graph_id" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="Int32" Name="indicator_id" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_comments">
+    <Key>
+      <PropertyRef Name="comment_id_pk" />
+    </Key>
+    <Property Type="Int32" Name="comment_id_pk" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="comment_content" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="user_name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="project_id" />
+    <Property Type="DateTime" Name="create_date" />
+    <Property Type="String" Name="comment_type" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_graphs">
+    <Key>
+      <PropertyRef Name="graph_id_pk" />
+    </Key>
+    <Property Type="Int32" Name="graph_id_pk" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="country_list" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="indicator_list" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="graph_name" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="String" Name="type" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="project_id" />
+  </EntityType>
+</Schema>

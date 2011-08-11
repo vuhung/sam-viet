@@ -1,0 +1,15 @@
+D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Release\WorldbankDataGraphs.dll
+D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Release\WorldbankDataGraphs.pdb
+D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Release\AppManifest.xaml
+D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Release\WorldbankDataGraphs.xap
+D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Release\WorldbankDataGraphsTestPage.html
+D:\Working\WordBank\Source\WorldbankDataGraphs\Bin\Release\SLVisifire.Charts.dll
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\ResolveAssemblyReference.cache
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\App.g.i.cs
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\WorldbankGeneralChartControl.g.i.cs
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\WorldbankPieChartControl.g.i.cs
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\WorldbankPointChartControl.g.i.cs
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\WorldbankDataGraphs.g.resources
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\WorldbankDataGraphs.dll
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\WorldbankDataGraphs.pdb
+D:\Working\WordBank\Source\WorldbankDataGraphs\obj\Release\XapCacheFile.xml
